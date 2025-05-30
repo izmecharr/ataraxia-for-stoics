@@ -1,9 +1,12 @@
-# ATARAXIA
+# ATARAXIA for Modern Stoics
 ### Ancient Wisdom for Modern Minds
 
 ![ATARAXIA Logo](https://img.shields.io/badge/ATARAXIA-Ancient%20Wisdom-black?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDJMMTMuMDkgOC4yNkwyMCA5TDEzLjA5IDE1Ljc0TDEyIDIyTDEwLjkxIDE1Ljc0TDQgOUwxMC45MSA4LjI2TDEyIDJaIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K)
 ![Status](https://img.shields.io/badge/Status-In%20Development-orange?style=for-the-badge)
 <!-- ![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge) -->
+
+## 🔧 Deployment
+Click here to see website: [Ataraxia Website](https://ataraxia-for-stoics.vercel.app/)
 
 ## 🌍 **Why the World Needs Stoicism Now More Than Ever**
 
