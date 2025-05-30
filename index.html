@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATARAXIA - Ancient Wisdom for Modern Minds</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button class="mobile-menu-btn" onclick="toggleMobile()">
+        <i class="fas fa-bars"></i>
+    </button>
+    
+    <div class="container">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar" id="sidebar">
+            <div class="logo">
+                <h1>ATARAXIA</h1>
+                <div class="subtitle">Ancient Wisdom</div>
+            </div>
+            
+            <div class="nav-section">
+                <div class="nav-title">Navigation</div>
+                <a href="#" class="nav-item active" onclick="showPage('home')">
+                    <i class="fas fa-home"></i>
+                    <span class="icon-fallback">🏠</span>
+                    <span>Home</span>
+                </a>
+                <a href="#" class="nav-item" onclick="showPage('breathing')">
+                    <i class="fas fa-lungs"></i>
+                    <span class="icon-fallback">🫁</span>
+                    <span>Breathe & Reflect</span>
+                </a>
+                <a href="#" class="nav-item" onclick="showPage('quotes')">
+                    <i class="fas fa-quote-left"></i>
+                    <span class="icon-fallback">💬</span>
+                    <span>Daily Wisdom</span>
+                </a>
+                <a href="#" class="nav-item" onclick="showPage('concepts')">
+                    <i class="fas fa-lightbulb"></i>
+                    <span class="icon-fallback">💡</span>
+                    <span>Stoic Concepts</span>
+                </a>
+            </div>
+
+            <div class="nav-section">
+                <div class="nav-title">Philosophers</div>
+                <a href="#" class="nav-item" onclick="showPage('philosophers')">
+                    <i class="fas fa-users"></i>
+                    <span class="icon-fallback">👥</span>
+                    <span>All Philosophers</span>
+                    <span class="nav-count">7</span>
+                </a>
+                <a href="#" class="nav-item" onclick="showPage('marcus')">
+                    <i class="fas fa-crown"></i>
+                    <span class="icon-fallback">👑</span>
+                    <span>Marcus Aurelius</span>
+                </a>
+                <a href="#" class="nav-item" onclick="showPage('epictetus')">
+                    <i class="fas fa-chain-broken"></i>
+                    <span class="icon-fallback">⛓️</span>
+                    <span>Epictetus</span>
+                </a>
+                <a href="#" class="nav-item" onclick="showPage('seneca')">
+                    <i class="fas fa-feather-alt"></i>
+                    <span class="icon-fallback">🪶</span>
+                    <span>Seneca</span>
+                </a>
+            </div>
+
+            <div class="nav-section">
+                <div class="nav-title">Practice</div>
+                <a href="#" class="nav-item" onclick="showPage('sage')">
+                    <i class="fas fa-brain"></i>
+                    <span class="icon-fallback">🧠</span>
+                    <span>Sage Simulator</span>
+                </a>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <div class="portfolio-tag">
+                    <i class="fas fa-scroll"></i>
+                    <span>Ancient Wisdom</span>
+                </div>
+                <div class="hero-content">
+                    <h2>Ancient Wisdom<br>for Modern Minds</h2>
+                    <p class="hero-subtitle">
+                        Master the timeless art of Stoic philosophy. Build unshakeable inner strength, 
+                        emotional resilience, and practical wisdom for navigating life's challenges.
+                    </p>
+                    <a href="#" class="hero-cta" onclick="showPage('breathing')">
+                        <i class="fas fa-play"></i>
+                        Begin Your Journey
+                    </a>
+                </div>
+            </section>
+
+            <!-- Home Page -->
+            <div id="home" class="page-content active content-section">
+                <h1 class="page-title">Welcome to Your Stoic Journey</h1>
+                <p class="page-subtitle">Discover practical tools and timeless wisdom to build inner strength and emotional mastery.</p>
+                
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-number">2000+</span>
+                        <span class="stat-label">Years of Wisdom</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">4</span>
+                        <span class="stat-label">Core Virtues</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">∞</span>
+                        <span class="stat-label">Inner Peace</span>
+                    </div>
+                </div>
+                
+                <div class="card-grid">
+                    <div class="card animate-on-scroll" onclick="showPage('breathing')">
+                        <h3 class="card-title">
+                            <i class="fas fa-lungs"></i>
+                            Breathe & Reflect
+                        </h3>
+                        <p>Start your day with guided breathing exercises paired with Stoic wisdom. Practice mindfulness and cultivate inner tranquility through ancient meditation techniques.</p>
+                    </div>
+                    
+                    <div class="card animate-on-scroll" onclick="showPage('quotes')">
+                        <h3 class="card-title">
+                            <i class="fas fa-quote-left"></i>
+                            Daily Wisdom
+                        </h3>
+                        <p>Discover profound insights from Marcus Aurelius, Epictetus, and Seneca. Each quote includes historical context and practical applications for modern challenges.</p>
+                    </div>
+                    
+                    <div class="card animate-on-scroll" onclick="showPage('concepts')">
+                        <h3 class="card-title">
+                            <i class="fas fa-lightbulb"></i>
+                            Master Core Concepts
+                        </h3>
+                        <p>Learn fundamental Stoic principles like the dichotomy of control, virtue ethics, and emotional resilience with clear explanations and real-world examples.</p>
+                    </div>
+                    
+                    <div class="card animate-on-scroll" onclick="showPage('sage')">
+                        <h3 class="card-title">
+                            <i class="fas fa-brain"></i>
+                            Sage Simulator
+                        </h3>
+                        <p>Face life's challenges with ancient wisdom. Get personalized guidance on how Stoic philosophers would approach modern dilemmas and difficult decisions.</p>
+                    </div>
+                </div>
+
+                <div class="quote-card card animate-on-scroll">
+                    <div style="padding: 40px;">
+                        <div class="quote-text">
+                            "You have power over your mind - not outside events. Realize this, and you will find strength."
+                        </div>
+                        <div class="quote-author">— Marcus Aurelius</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Breathing Page -->
+            <div id="breathing" class="page-content content-section">
+                <div class="breathing-container">
+                    <h1 class="page-title">Breathe & Reflect</h1>
+                    <p class="page-subtitle">Center yourself with mindful breathing and Stoic contemplation</p>
+                    
+                    <div class="breathing-circle" id="breathingCircle">
+                        <span id="breathingText">Ready</span>
+                    </div>
+                    
+                    <div class="breathing-progress" id="breathingProgress">
+                        <div class="breathing-progress-bar" id="breathingProgressBar"></div>
+                    </div>
+                    
+                    <div class="breathing-instruction" id="breathingInstruction">
+                        Click "Begin Practice" to start your mindful breathing session
+                    </div>
+                    
+                    <button class="btn-primary" onclick="startBreathing()" id="breathingBtn">
+                        <i class="fas fa-play"></i>
+                        Begin Practice
+                    </button>
+                    
+                    <div class="stoic-quote" id="motivationalQuote">
+                        When you arise in the morning, think of what a precious privilege it is to be alive - to breathe, to think, to enjoy, to love. — Marcus Aurelius
+                    </div>
+                </div>
+            </div>
+
+            <!-- Daily Quotes Page -->
+            <div id="quotes" class="page-content content-section">
+                <h1 class="page-title">Daily Stoic Wisdom</h1>
+                <p class="page-subtitle">Timeless insights for modern challenges</p>
+                
+                <div class="quote-card card animate-on-scroll">
+                    <div style="padding: 40px;">
+                        <div class="quote-text">
+                            "It's not what happens to you, but how you react to it that matters."
+                        </div>
+                        <div class="quote-author">— Epictetus</div>
+                        <div class="quote-context">
+                            <div class="context-section">
+                                <h4 class="context-title">
+                                    <i class="fas fa-history"></i>
+                                    Historical Context
+                                </h4>
+                                <p>Epictetus, born a slave in ancient Greece, understood suffering intimately. Despite his circumstances, he developed one of philosophy's most powerful teachings about personal agency and emotional freedom.</p>
+                            </div>
+                            <div class="context-section">
+                                <h4 class="context-title">
+                                    <i class="fas fa-lightbulb"></i>
+                                    Modern Application
+                                </h4>
+                                <p>In today's world of constant change and uncertainty, this wisdom reminds us that while we cannot control external events—job loss, criticism, traffic jams—we always retain control over our responses and attitudes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quote-card card animate-on-scroll">
+                    <div style="padding: 40px;">
+                        <div class="quote-text">
+                            "Every new beginning comes from some other beginning's end."
+                        </div>
+                        <div class="quote-author">— Seneca</div>
+                        <div class="quote-context">
+                            <div class="context-section">
+                                <h4 class="context-title">
+                                    <i class="fas fa-history"></i>
+                                    Historical Context
+                                </h4>
+                                <p>Seneca, advisor to emperors and successful businessman, experienced both great fortune and political exile. His writings reflect deep understanding of life's cyclical nature.</p>
+                            </div>
+                            <div class="context-section">
+                                <h4 class="context-title">
+                                    <i class="fas fa-lightbulb"></i>
+                                    Modern Application
+                                </h4>
+                                <p>Whether facing career changes, relationship transitions, or personal setbacks, remember that endings create space for new opportunities. Embrace change as natural and potentially beneficial.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quote-card card animate-on-scroll">
+                    <div style="padding: 40px;">
+                        <div class="quote-text">
+                            "Confine yourself to the present."
+                        </div>
+                        <div class="quote-author">— Marcus Aurelius</div>
+                        <div class="quote-context">
+                            <div class="context-section">
+                                <h4 class="context-title">
+                                    <i class="fas fa-history"></i>
+                                    Historical Context
+                                </h4>
+                                <p>As Roman Emperor, Marcus Aurelius faced constant pressures and decisions affecting millions. His personal journal, "Meditations," reveals his practice of present-moment awareness.</p>
+                            </div>
+                            <div class="context-section">
+                                <h4 class="context-title">
+                                    <i class="fas fa-lightbulb"></i>
+                                    Modern Application
+                                </h4>
+                                <p>Combat anxiety about the future and regret about the past by focusing on what you can do right now. The present moment is where your power and peace reside.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stoic Concepts Page -->
+            <div id="concepts" class="page-content content-section">
+                <h1 class="page-title">Essential Stoic Concepts</h1>
+                <p class="page-subtitle">Master the fundamental principles that transform how you think and live</p>
+                
+                <div class="concept-item animate-on-scroll">
+                    <h3 class="concept-title">
+                        <i class="fas fa-balance-scale"></i>
+                        The Dichotomy of Control
+                    </h3>
+                    <p class="concept-definition">The fundamental Stoic principle that divides all things into what we can control and what we cannot control.</p>
+                    <p>We can control our thoughts, decisions, actions, and responses. We cannot control other people, natural disasters, the past, or the future outcomes of our actions.</p>
+                    <div class="concept-example">
+                        <strong><i class="fas fa-car"></i> Real-life example:</strong> You're stuck in traffic and late for an important meeting. You cannot control the traffic (external), but you can control your response—staying calm, calling ahead to reschedule, or using the time productively instead of getting frustrated.
+                    </div>
+                </div>
+
+                <div class="concept-item animate-on-scroll">
+                    <h3 class="concept-title">
+                        <i class="fas fa-gem"></i>
+                        Virtue as the Sole Good
+                    </h3>
+                    <p class="concept-definition">The Stoic belief that virtue (wisdom, justice, courage, and self-discipline) is the only true good, and vice is the only true evil.</p>
+                    <p>External things like wealth, health, or reputation are "indifferent"—they're not inherently good or bad, but depend on how we use them.</p>
+                    <div class="concept-example">
+                        <strong><i class="fas fa-briefcase"></i> Real-life example:</strong> Losing your job might seem devastating, but it's morally neutral. How you respond—with integrity, resilience, and wisdom in seeking new opportunities—determines whether the experience becomes beneficial or harmful to your character.
+                    </div>
+                </div>
+
+                <div class="concept-item animate-on-scroll">
+                    <h3 class="concept-title">
+                        <i class="fas fa-eye"></i>
+                        Negative Visualization (Premeditatio Malorum)
+                    </h3>
+                    <p class="concept-definition">The practice of imagining loss or setbacks to cultivate gratitude and prepare mentally for challenges.</p>
+                    <p>By contemplating potential difficulties, we become more grateful for what we have and less shaken when problems arise.</p>
+                    <div class="concept-example">
+                        <strong><i class="fas fa-presentation"></i> Real-life example:</strong> Before an important presentation, briefly imagine it going poorly. This isn't pessimism—it's preparation. You'll appreciate if it goes well and be mentally ready if it doesn't, reducing anxiety and improving performance.
+                    </div>
+                </div>
+
+                <div class="concept-item animate-on-scroll">
+                    <h3 class="concept-title">
+                        <i class="fas fa-globe"></i>
+                        The View from Above
+                    </h3>
+                    <p class="concept-definition">A mental exercise of imagining yourself from a cosmic perspective to gain context and reduce ego-driven concerns.</p>
+                    <p>By zooming out to see the bigger picture of time and space, our daily worries often reveal themselves as less significant than they initially seemed.</p>
+                    <div class="concept-example">
+                        <strong><i class="fas fa-comments"></i> Real-life example:</strong> When someone criticizes your work unfairly, imagine viewing this moment from space, or from 100 years in the future. This perspective helps you respond with wisdom rather than defensiveness, focusing on what truly matters.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Philosophers Page -->
+            <div id="philosophers" class="page-content content-section">
+                <h1 class="page-title">Stoic Philosophers</h1>
+                <p class="page-subtitle">Meet the great minds who shaped this transformative philosophy</p>
+                
+                <div class="philosopher-profile animate-on-scroll">
+                    <div class="philosopher-image">MA</div>
+                    <div class="philosopher-info">
+                        <h3>Marcus Aurelius</h3>
+                        <p class="philosopher-dates">121 - 180 CE</p>
+                        <p>Roman Emperor and philosopher, known as the last of the "Five Good Emperors." His personal journal, "Meditations," remains one of the most influential works of ancient philosophy.</p>
+                        <p style="margin-top: 20px;"><strong><i class="fas fa-key"></i> Key Teaching:</strong> Focus on the present moment and accept what is beyond your control while taking responsibility for your thoughts and actions.</p>
+                    </div>
+                </div>
+
+                <div class="philosopher-profile animate-on-scroll">
+                    <div class="philosopher-image">E</div>
+                    <div class="philosopher-info">
+                        <h3>Epictetus</h3>
+                        <p class="philosopher-dates">50 - 135 CE</p>
+                        <p>Born a slave in ancient Greece, Epictetus became one of history's most influential teachers of personal freedom and resilience. His teachings were compiled in "The Discourses" and "The Enchiridion."</p>
+                        <p style="margin-top: 20px;"><strong><i class="fas fa-key"></i> Key Teaching:</strong> True freedom comes from understanding what is and isn't under our control, and aligning our desires accordingly.</p>
+                    </div>
+                </div>
+
+                <div class="philosopher-profile animate-on-scroll">
+                    <div class="philosopher-image">S</div>
+                    <div class="philosopher-info">
+                        <h3>Seneca</h3>
+                        <p class="philosopher-dates">4 BCE - 65 CE</p>
+                        <p>Roman statesman, dramatist, and Stoic philosopher. Advisor to Emperor Nero, Seneca wrote extensively on practical ethics and how to live well despite external circumstances.</p>
+                        <p style="margin-top: 20px;"><strong><i class="fas fa-key"></i> Key Teaching:</strong> Time is our most valuable resource; live each day fully while preparing mentally for life's inevitable challenges.</p>
+                    </div>
+                </div>
+
+                <div class="philosopher-profile animate-on-scroll">
+                    <div class="philosopher-image">Z</div>
+                    <div class="philosopher-info">
+                        <h3>Zeno of Citium</h3>
+                        <p class="philosopher-dates">334 - 262 BCE</p>
+                        <p>Founder of Stoicism in ancient Athens. After being shipwrecked and losing his fortune, Zeno developed the philosophical system that would influence Western thought for centuries.</p>
+                        <p style="margin-top: 20px;"><strong><i class="fas fa-key"></i> Key Teaching:</strong> Virtue is the path to happiness, and wisdom comes from living in accordance with nature and reason.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Individual Philosopher Pages -->
+            <div id="marcus" class="page-content content-section">
+                <h1 class="page-title">Marcus Aurelius</h1>
+                <p class="page-subtitle">The Philosopher Emperor</p>
+                
+                <div class="philosopher-profile">
+                    <div class="philosopher-image">MA</div>
+                    <div class="philosopher-info">
+                        <h3>Marcus Aurelius Antoninus</h3>
+                        <p class="philosopher-dates">121 - 180 CE</p>
+                        <p>The unique position of being both Roman Emperor and devoted Stoic philosopher made Marcus Aurelius's writings particularly powerful—here was someone applying philosophy while wielding ultimate worldly power.</p>
+                    </div>
+                </div>
+
+                <div class="card animate-on-scroll">
+                    <h3 class="card-title">
+                        <i class="fas fa-scroll"></i>
+                        Life & Context
+                    </h3>
+                    <p>Born into privilege, Marcus was adopted by Emperor Antoninus Pius and groomed for leadership. Despite the pressures of ruling an empire, he maintained a daily practice of philosophical reflection, writing personal notes that became the "Meditations."</p>
+                </div>
+
+                <div class="card animate-on-scroll">
+                    <h3 class="card-title">
+                        <i class="fas fa-star"></i>
+                        Key Teachings
+                    </h3>
+                    <div style="display: grid; gap: 16px; margin-top: 20px;">
+                        <div style="display: flex; align-items: center; gap: 12px;">
+                            <i class="fas fa-clock" style="color: var(--primary-black);"></i>
+                            <div><strong>Present Moment Awareness:</strong> "Confine yourself to the present"</div>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 12px;">
+                            <i class="fas fa-globe" style="color: var(--primary-black);"></i>
+                            <div><strong>Cosmic Perspective:</strong> See yourself as part of the larger universe</div>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 12px;">
+                            <i class="fas fa-hands-helping" style="color: var(--primary-black);"></i>
+                            <div><strong>Duty and Service:</strong> We exist to help each other</div>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 12px;">
+                            <i class="fas fa-check-circle" style="color: var(--primary-black);"></i>
+                            <div><strong>Acceptance:</strong> Work with reality as it is, not as you wish it were</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quote-card card animate-on-scroll">
+                    <div style="padding: 40px;">
+                        <div class="quote-text">"The best revenge is not to be like your enemy."</div>
+                        <div class="quote-author">— Marcus Aurelius</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="epictetus" class="page-content content-section">
+                <h1 class="page-title">Epictetus</h1>
+                <p class="page-subtitle">From Slavery to Freedom</p>
+                
+                <div class="philosopher-profile">
+                    <div class="philosopher-image">E</div>
+                    <div class="philosopher-info">
+                        <h3>Epictetus</h3>
+                        <p class="philosopher-dates">50 - 135 CE</p>
+                        <p>Born into slavery, Epictetus experienced physical bondage yet achieved mental freedom through philosophy. His teachings on personal liberty and resilience carry unique authority.</p>
+                    </div>
+                </div>
+
+                <div class="card animate-on-scroll">
+                    <h3 class="card-title">
+                        <i class="fas fa-life-ring"></i>
+                        Life & Context
+                    </h3>
+                    <p>Despite being born a slave and suffering physical disability, Epictetus studied philosophy and eventually gained his freedom. He established a school where he taught that external circumstances cannot touch our inner freedom.</p>
+                </div>
+
+                <div class="card animate-on-scroll">
+                    <h3 class="card-title">
+                        <i class="fas fa-brain"></i>
+                        Core Philosophy
+                    </h3>
+                    <p>Epictetus taught that we suffer not from events themselves, but from our judgments about events. By changing our perspective and focusing only on what we can control—our thoughts, decisions, and actions—we can achieve true freedom regardless of external circumstances.</p>
+                </div>
+
+                <div class="quote-card card animate-on-scroll">
+                    <div style="padding: 40px;">
+                        <div class="quote-text">"No one can hurt you without your permission."</div>
+                        <div class="quote-author">— Epictetus</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="seneca" class="page-content content-section">
+                <h1 class="page-title">Seneca</h1>
+                <p class="page-subtitle">The Practical Stoic</p>
+                
+                <div class="philosopher-profile">
+                    <div class="philosopher-image">S</div>
+                    <div class="philosopher-info">
+                        <h3>Lucius Annaeus Seneca</h3>
+                        <p class="philosopher-dates">4 BCE - 65 CE</p>
+                        <p>Seneca balanced wealth, political power, and philosophical wisdom, showing how Stoic principles apply to worldly success and failure alike.</p>
+                    </div>
+                </div>
+
+                <div class="card animate-on-scroll">
+                    <h3 class="card-title">
+                        <i class="fas fa-building"></i>
+                        Life & Context
+                    </h3>
+                    <p>A successful businessman, playwright, and advisor to Emperor Nero, Seneca experienced both great fortune and political danger. His letters to his friend Lucilius provide practical guidance for daily living.</p>
+                </div>
+
+                <div class="card animate-on-scroll">
+                    <h3 class="card-title">
+                        <i class="fas fa-tools"></i>
+                        Practical Wisdom
+                    </h3>
+                    <p>Seneca's writings focus on how to maintain virtue while engaged in worldly affairs. He taught that wealth and status are tools that can be used virtuously or viciously—what matters is our character and intentions.</p>
+                </div>
+
+                <div class="quote-card card animate-on-scroll">
+                    <div style="padding: 40px;">
+                        <div class="quote-text">"It is not that we have a short time to live, but that we waste a lot of it."</div>
+                        <div class="quote-author">— Seneca</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sage Simulator Page -->
+            <div id="sage" class="page-content content-section">
+                <h1 class="page-title">Sage Simulator</h1>
+                <p class="page-subtitle">What would a Stoic sage do in your situation?</p>
+                
+                <div class="sage-simulator animate-on-scroll">
+                    <h3 class="section-title">
+                        <i class="fas fa-lightbulb"></i>
+                        Current Scenario
+                    </h3>
+                    
+                    <div class="scenario-box" id="currentScenario">
+                        <h4>Workplace Conflict</h4>
+                        <p>Your colleague takes credit for your idea in a meeting with senior management. You feel angry and want to confront them publicly. Several people witnessed the incident, but no one spoke up. This could affect your upcoming promotion review.</p>
+                    </div>
+                    
+                    <button class="btn-primary" onclick="generateScenario()">
+                        <i class="fas fa-dice"></i>
+                        Generate New Scenario
+                    </button>
+                    
+                    <div class="sage-response">
+                        <h4>
+                            <i class="fas fa-user-graduate"></i>
+                            How a Stoic Sage Would Respond:
+                        </h4>
+                        <div class="response-section">
+                            <p><strong><i class="fas fa-clock"></i> Immediate Response:</strong> The sage would pause before reacting, recognizing that anger is a judgment about the situation, not the situation itself. They would focus on what they can control—their own response—rather than what they cannot control—their colleague's behavior or others' reactions.</p>
+                        </div>
+                        
+                        <div class="response-section">
+                            <p><strong><i class="fas fa-cogs"></i> Practical Action:</strong> The sage would approach the colleague privately, speaking calmly and factually: "I noticed my idea was presented without attribution in the meeting. I'd like to discuss how we can properly acknowledge contributions going forward." This addresses the issue without public confrontation or emotional reaction.</p>
+                        </div>
+                        
+                        <div class="response-section">
+                            <p><strong><i class="fas fa-balance-scale"></i> Stoic Principle Applied:</strong> <em>Dichotomy of Control</em> - Focus energy only on what you can influence: your response, your future actions, and clear communication.</p>
+                        </div>
+                        
+                        <div class="response-section">
+                            <p><strong><i class="fas fa-telescope"></i> Long-term Perspective:</strong> The sage would view this as an opportunity to practice virtue (justice and self-discipline) and to clarify professional boundaries. They understand that their character matters more than external recognition, while still taking appropriate action to address the situation.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-top: 64px;">
+                    <h3 class="section-title">
+                        <i class="fas fa-dumbbell"></i>
+                        Practice Scenarios
+                    </h3>
+                    <div class="card-grid">
+                        <div class="card animate-on-scroll" onclick="loadScenario('relationship')">
+                            <h3 class="card-title">
+                                <i class="fas fa-heart-broken"></i>
+                                Relationship Issues
+                            </h3>
+                            <p>Navigate breakups, conflicts, and emotional challenges with Stoic wisdom and grace.</p>
+                        </div>
+                        <div class="card animate-on-scroll" onclick="loadScenario('career')">
+                            <h3 class="card-title">
+                                <i class="fas fa-briefcase"></i>
+                                Career Setbacks
+                            </h3>
+                            <p>Handle job loss, workplace stress, and professional disappointments with resilience.</p>
+                        </div>
+                        <div class="card animate-on-scroll" onclick="loadScenario('health')">
+                            <h3 class="card-title">
+                                <i class="fas fa-heartbeat"></i>
+                                Health Challenges
+                            </h3>
+                            <p>Face illness, aging, and physical limitations with courage and acceptance.</p>
+                        </div>
+                        <div class="card animate-on-scroll" onclick="loadScenario('family')">
+                            <h3 class="card-title">
+                                <i class="fas fa-home"></i>
+                                Family Drama
+                            </h3>
+                            <p>Deal with difficult relatives and family conflicts while maintaining inner peace.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
