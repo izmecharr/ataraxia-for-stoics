@@ -70,7 +70,7 @@ A modern, interactive web application that makes ancient Stoic philosophy access
 
 ## 📱 **Upcoming: Mobile Application**
 
-We're excited to announce that a **native mobile application** is currently in development! The mobile app will feature:
+We will be releasing a **native mobile application** soon! The mobile app will feature:
 
 - **📱 Pocket Philosopher** - Quick Stoic wisdom for busy moments
 - **⚡ Trigger Response Training** - Practice Stoic responses to common stressors
@@ -79,9 +79,9 @@ We're excited to announce that a **native mobile application** is currently in d
 - **🔔 Daily Reminders** - Gentle nudges for philosophical practice
 - **📊 Progress Tracking** - Monitor your growth in Stoic practices
 
-*Expected release: Q2 2024*
+*Expected release: Q4 2026*
 
-## 🛠️ **Installation & Setup**
+<!-- ## 🛠️ **Installation & Setup**
 
 ### **Quick Start**
 1. **Clone the repository**
@@ -99,9 +99,11 @@ We're excited to announce that a **native mobile application** is currently in d
    ```
 
 3. **Access the application**
-   <!-- - Direct file: `file:///path/to/ataraxia/index.html`
-   - Local server: `http://localhost:8000` -->
-    - Deployed Website: 'http://localhost:8000'
+   - Direct file: `file:///path/to/ataraxia/index.html`
+   - Local server: `http://localhost:8000`
+   - Deployed Website: 'http://localhost:8000' -->
+
+
 <!-- ### **File Structure**
 ```
 ataraxia/
@@ -116,19 +118,19 @@ ataraxia/
 
 > **Note**: ATARAXIA is an ongoing project with ambitious expansion plans. Below is our comprehensive roadmap for upcoming features:
 
-### **🎯 Phase 1: Enhanced Learning (Q1 2024)**
+### **🎯 Phase 1: Enhanced Learning (2025)**
 - **Modern Stoic Interpretations** - Contemporary applications of ancient wisdom
 - **Stoic Text Library** - Searchable database of primary texts with annotations
 - **Philosophy Comparison Tool** - Contrast Stoicism with other philosophical schools
 
-### **🏃‍♂️ Phase 2: Interactive Practice Tools (Q2 2024)**
+### **🏃‍♂️ Phase 2: Interactive Practice Tools (2025)**
 - **Virtue Tracker** - Monitor progress in the four cardinal virtues
 - **Negative Visualization Exercise** - Guided premeditatio malorum sessions
 - **Dichotomy of Control Analyzer** - Categorize daily concerns
 - **Evening Review Template** - Structured reflection following Seneca's practice
 - **Morning Preparation Ritual** - Daily intention-setting based on Marcus Aurelius
 
-### **🧠 Phase 3: Advanced Features (Q3 2024)**
+### **🧠 Phase 3: Advanced Features (2025)**
 - **Stoic Decision Matrix** - Framework for principled choice-making
 - **Emotion Reframing Tool** - Transform negative thoughts using Stoic techniques
 - **Personal Philosophy Builder** - Create custom philosophical frameworks
@@ -136,26 +138,26 @@ ataraxia/
 - **Mentor Matching** - Connect beginners with experienced practitioners
 - **Daily Reflection Journal** - Guided prompts based on Stoic exercises
 
-### **📚 Phase 4: Educational Resources (Q4 2024)**
+### **📚 Phase 4: Educational Resources (2025)**
 - **Historical Timeline** - Interactive Stoic philosophy development
 - **Modern Applications** - Case studies in business, sports, therapy
 - **Misconceptions Debunked** - Address common misunderstandings
 - **Academic Papers Database** - Scholarly research collection
 
-### **👥 Phase 5: Community & Social Features (2025)**
+### **👥 Phase 5: Community & Social Features (2026)**
 - **Stoic Forum** - Discussion boards by topic and experience level
 - **Practice Partner Finder** - Accountability partnerships
 - **Local Stoic Groups** - Directory of meetups and study groups
 - **Success Stories** - User testimonials and transformations
 - **Stoic Challenges** - Monthly community exercises
 
-### **🎮 Phase 6: Gamification & Tools (2025)**
+### **🎮 Phase 6: Gamification & Tools (2026)**
 - **Philosophy Achievement Badges** - Recognition for consistent practice
 - **Wisdom Points System** - Engagement and reflection rewards
 - **Stoic Reading Plan Generator** - Personalized study schedules
 - **Life Areas Assessment** - Evaluate domains through Stoic lens
 
-### **🎥 Phase 7: Multimedia Content (2025)**
+### **🎥 Phase 7: Multimedia Content (2026)**
 - **Guided Meditations** - Audio sessions for contemplative practices
 - **Philosophy Podcasts** - Scholar and practitioner interviews
 - **Video Lectures** - University-level Stoic philosophy courses
@@ -205,8 +207,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - **Marcus Aurelius**, **Epictetus**, and **Seneca** - For their timeless wisdom
 - **Modern Stoic Community** - For keeping ancient wisdom alive
-- **Contributors** - Everyone who helps make philosophy accessible
 - **Users** - For embracing the journey toward tranquility of mind
+<!-- - **Contributors** - Everyone who helps make philosophy accessible -->
 
 ---
 
